@@ -1,9 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
-public class FizzBuzzShould {
-
-    /*
+/*
     any number -> number
     any number divisible by 3-> Fizz
     any number divisible by 3 and contain 3-> FizzFizz
@@ -20,6 +17,7 @@ public class FizzBuzzShould {
     any number divisible by 3 and 5 and contain 5-> FizzBuzzBuzz
     any number divisible by 3 and 5 and contain 3 and contain 5-> FizzBuzzFizzBuzz
      */
+public class FizzBuzzShould {
 
 
     @Test
