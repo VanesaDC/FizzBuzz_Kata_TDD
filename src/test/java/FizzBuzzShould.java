@@ -28,4 +28,12 @@ public class FizzBuzzShould {
         String result= Main.checkNumber(number);
         assertEquals(String.valueOf(number),result);
     }
+
+    @Test
+    void print_Fizz_if_number_is_divisible_by_3(){
+        int number=3;
+        String result= Main.checkNumber(number);
+        assertEquals("Fizz",result);
+    }
+
 }
