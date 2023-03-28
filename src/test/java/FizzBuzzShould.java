@@ -34,4 +34,11 @@ public class FizzBuzzShould {
         assertEquals("Fizz",result);
     }
 
+    @Test
+    void print_Fizz_if_number_is_divisible_by_3_and_contain_3(){
+        int number=30;
+        String result= Main.checkNumber(number);
+        assertEquals("FizzFizz",result);
+    }
+
 }
