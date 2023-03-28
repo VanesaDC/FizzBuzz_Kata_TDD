@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
     --any number divisible by 3 but no by 5 and not contain 3 or 5-> Fizz (12)
     --any number contain 3 but no 5 and is not divisible by 3 or 5 -> Fizz (13)
     --any number divisible by 3 but no by 5 and contain 3 but no 5-> FizzFizz (3)
-    any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
+    --any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
     **any number divisible by 3 but no by 5 and contain 3 and contain 5-> FizzFizzBuzz (351)
 
 
