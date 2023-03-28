@@ -51,5 +51,10 @@ public class FizzBuzzShould {
         assertEquals("FizzFizz", result);
     }
     //any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
-
+    @Test
+    void print_FizzBuzz_when_number_is_dividible_by_3_but_not_by_5_and_contain_5_but_no_3() {
+        int number = 51;
+        String result = Main.checkNumber(number);
+        assertEquals("FizzBuzz", result);
+    }
 }
