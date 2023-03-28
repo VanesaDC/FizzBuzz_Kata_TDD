@@ -1,21 +1,24 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 /*
-    any number -> number
-    any number divisible by 3-> Fizz
-    any number divisible by 3 and contain 3-> FizzFizz
-    any number divisible by 3 and contain 5-> FizzBuzz
-    any number divisible by 3 and contain 3 and contain 5-> FizzFizzBuzz
+    --any number -> number
+    --any number divisible by 3 but no by 5 and not contain 3 or 5-> Fizz (12)
+    any number contain 3 but no 5 and is not divisible by 3 or 5 -> Fizz (13)
+    any number divisible by 3 but no by 5 and contain 3 but no 5-> FizzFizz (3)
+    any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
+    **any number divisible by 3 but no by 5 and contain 3 and contain 5-> FizzFizzBuzz (351)
 
-    any number divisible by 5-> Buzz
-    any number divisible by 5 and contain 5-> BuzzBuzz
-    any number divisible by 5 and contain 3-> BuzzFizz
-    any number divisible by 5 and contain 3 and 5-> BuzzFizzBuzz
 
-    any number divisible by 3 and 5 -> FizzBuzz
-    any number divisible by 3 and 5 and contain 3-> FizzBuzzFizz
-    any number divisible by 3 and 5 and contain 5-> FizzBuzzBuzz
-    any number divisible by 3 and 5 and contain 3 and contain 5-> FizzBuzzFizzBuzz
+    any number contain 5 but no 3 and is not divisible by 3 or 5 ->Buzz (56)
+    any number divisible by 5 but no by 3 and not contain 3 or 5-> Buzz (40)
+    any number divisible by 5 but no by 3 and contain 5 but no 3-> BuzzBuzz (5)
+    **any number divisible by 5 but no by 3 and contain 3 but no 5-> BuzzFizz
+    **any number divisible by 5 but no by 3 and contain 3 and 5-> BuzzFizzBuzz
+
+    any number divisible by 3 and 5 but no contain 3 or 5 -> FizzBuzz (60)
+    any number divisible by 3 and 5 and contain 3 but not 5-> FizzBuzzFizz (30)
+    **any number divisible by 3 and 5 and contain 5 but no 3-> FizzBuzzBuzz
+    **any number divisible by 3 and 5 and contain 3 and contain 5-> FizzBuzzFizzBuzz
      */
 public class FizzBuzzShould {
 
@@ -38,7 +41,7 @@ public class FizzBuzzShould {
     void print_Fizz_if_number_is_divisible_by_3_and_contain_3(){
         int number=30;
         String result= Main.checkNumber(number);
-        assertEquals("FizzFizz",result);
+        assertEquals("Fizz",result);
     }
 
 }
