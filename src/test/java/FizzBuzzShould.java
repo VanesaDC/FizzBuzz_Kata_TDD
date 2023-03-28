@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
     --any number -> number
     --any number divisible by 3 but no by 5 and not contain 3 or 5-> Fizz (12)
     --any number contain 3 but no 5 and is not divisible by 3 or 5 -> Fizz (13)
-    any number divisible by 3 but no by 5 and contain 3 but no 5-> FizzFizz (3)
+    --any number divisible by 3 but no by 5 and contain 3 but no 5-> FizzFizz (3)
     any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
     **any number divisible by 3 but no by 5 and contain 3 and contain 5-> FizzFizzBuzz (351)
 
@@ -45,10 +45,11 @@ public class FizzBuzzShould {
     }
 
     @Test
-    void print_Fizz_when_number_is_dividibleby_3_but_not_by_5_and_contain_3_but_no_5() {
+    void print_FizzFizz_when_number_is_dividibleby_3_but_not_by_5_and_contain_3_but_no_5() {
         int number = 3;
         String result = Main.checkNumber(number);
         assertEquals("FizzFizz", result);
     }
+    //any number divisible by 3 but no by 5 and contain 5 but no 3-> FizzBuzz (51)
 
 }
