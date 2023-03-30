@@ -77,6 +77,7 @@ public class FizzBuzzShould {
     @Test
     void foo8(){assertEquals("FizzFizz",fizzBuzz(3));}
     @Test
-    void foo9(){assertEquals("BuzzFizzBuzz",(35));}
-
+    void foo9(){assertEquals("BuzzFizzBuzz",fizzBuzz(35));}
+    @Test
+    void foo10(){assertEquals("FizzBuzzFizz",fizzBuzz(30));}
 }
