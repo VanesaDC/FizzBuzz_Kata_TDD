@@ -21,14 +21,19 @@ public class FizzBuzzShould {
     public String fizzBuzz(int number) {
 
         boolean is_divisible_by_3 = number % 3 == 0;
+        boolean is_divisible_by_5 = number % 5 == 0;
+        if (is_divisible_by_3 && is_divisible_by_5){
+            return "FizzBuzz";
+        }
 
         if (is_divisible_by_3){
             return "Fizz";
         }
-        boolean is_divisible_by_5 = number % 5 == 0;
+
         if (is_divisible_by_5){
             return "Buzz";
         }
+
         return "1";
     }
 
