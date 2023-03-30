@@ -32,9 +32,10 @@ public class FizzBuzzShould {
         }
 
         boolean contains_5 = String.valueOf(number).contains("5");
-        if (is_divisible_by_5 && String.valueOf(number).contains("5")){
+        if (is_divisible_by_5 && contains_5 ){
             return "BuzzBuzz";
         }
+
         if (is_divisible_by_5 || contains_5){
             return "Buzz";
         }
