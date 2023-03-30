@@ -48,7 +48,7 @@ public class FizzBuzzShould {
     @Test
     void foo9(){assertEquals("BuzzFizzBuzz", FizzBuzz.fizzBuzz(35));}
     @Test
-    void foo10(){assertEquals("FizzBuzzFizz",fizzBuzz(30));}
+    void foo10(){assertEquals("FizzBuzzFizz",FizzBuzz.fizzBuzz(30));}
     @Test
-    void foo11(){assertEquals("FizzBuzzBuzz",fizzBuzz(15));}
+    void foo11(){assertEquals("FizzBuzzBuzz",FizzBuzz.fizzBuzz(15));}
 }
