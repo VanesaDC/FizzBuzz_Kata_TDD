@@ -31,9 +31,15 @@ public class FizzBuzzShould {
             return "Fizz";
         }
 
-        if (is_divisible_by_5 ||String.valueOf(number).contains("5") ){
+        boolean contains_5 = String.valueOf(number).contains("5");
+        if (is_divisible_by_5 && String.valueOf(number).contains("5")){
+            return "BuzzBuzz";
+        }
+        if (is_divisible_by_5 || contains_5){
             return "Buzz";
         }
+
+
 
         return "1";
     }
