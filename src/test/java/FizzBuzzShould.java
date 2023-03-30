@@ -23,11 +23,16 @@ public class FizzBuzzShould {
 
         boolean is_divisible_by_3 = number % 3 == 0;
         boolean is_divisible_by_5 = number % 5 == 0;
+        boolean contains_3 = String.valueOf(number).contains("3");
+        boolean contains_5 = String.valueOf(number).contains("5");
+        if (is_divisible_by_5 && contains_3 && contains_5){
+            return "BuzzFizzBuzz";
+        }
+
         if (is_divisible_by_3 && is_divisible_by_5){
             return "FizzBuzz";
         }
 
-        boolean contains_3 = String.valueOf(number).contains("3");
         if (is_divisible_by_3 && contains_3){
             return "FizzFizz";
         }
@@ -35,7 +40,6 @@ public class FizzBuzzShould {
             return "Fizz";
         }
 
-        boolean contains_5 = String.valueOf(number).contains("5");
         if (is_divisible_by_5 && contains_5 ){
             return "BuzzBuzz";
         }
@@ -43,8 +47,6 @@ public class FizzBuzzShould {
         if (is_divisible_by_5 || contains_5){
             return "Buzz";
         }
-
-
 
         return "1";
     }
