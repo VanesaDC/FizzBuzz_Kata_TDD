@@ -11,7 +11,8 @@ import org.junit.jupiter.api.Test;
 
     (5)->BuzzBuzz
     (3)->FizzFizz
-    (35)->FizzBuzzBuzz
+
+    (35)->BuzzFizzBuzz
     (30)->FizzBuzzFizz
     (15)->FizzBuzzBuzz
 */
@@ -73,5 +74,7 @@ public class FizzBuzzShould {
     void foo7(){assertEquals("BuzzBuzz",fizzBuzz(5));}
     @Test
     void foo8(){assertEquals("FizzFizz",fizzBuzz(3));}
+    @Test
+    void foo9(){assertEquals("BuzzFizzBuzz",(35));}
 
 }
