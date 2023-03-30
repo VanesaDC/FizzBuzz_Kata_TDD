@@ -32,6 +32,9 @@ public class FizzBuzzShould {
         if (is_divisible_by_3 && is_divisible_by_5 && contains_3){
             return "FizzBuzzFizz";
         }
+        if (is_divisible_by_3 && is_divisible_by_5 && contains_5){
+            return "FizzBuzzBuzz";
+        }
 
         if (is_divisible_by_3 && is_divisible_by_5){
             return "FizzBuzz";
