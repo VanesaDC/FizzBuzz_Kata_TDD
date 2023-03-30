@@ -26,7 +26,7 @@ public class FizzBuzzShould {
             return "FizzBuzz";
         }
 
-        if (is_divisible_by_3){
+        if (is_divisible_by_3 || String.valueOf(number).contains("3")){
             return "Fizz";
         }
 
