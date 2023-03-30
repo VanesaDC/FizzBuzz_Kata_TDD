@@ -29,7 +29,6 @@ public class FizzBuzzShould {
     void foo1(){
         assertEquals("Fizz", FizzBuzz.fizzBuzz(6));
     }
-
     @Test
     void foo3(){assertEquals("Buzz", FizzBuzz.fizzBuzz(10));
     }
